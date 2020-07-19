@@ -1,0 +1,145 @@
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>ZOBota</title>
+<style>
+  .header-h1 {
+    position: relative;
+    margin-bottom: .5rem;
+    text-align: center;
+  }
+  .header-h1 h1 {
+    display: inline-block;
+    background: #6a1b9a;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: .5rem 1.5rem;
+    border: .125rem solid #DDA0DD;
+    color: #6a1b9a;
+  }
+  .header-h1 h1::after {
+    content: "";
+    position: absolute;
+    background: #6a1b9a;
+    height: .125rem;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: -999;
+  }
+  .header-h1-dark h1 {
+    background: #6a1b9a;
+    color: #DDA0DD;
+  }
+</style>
+<style>
+    button.knopka {
+        color: #D8BFD8;
+        background: #8B008B;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid #8B008B;
+    }
+    button.knopka:hover {
+        background: #8B008B;
+    }
+</style>
+<style>
+   .blok-center {
+    position: absolute;
+    width: 400px; /* Ширина блока */
+    height: 500px; /* Высота блока */
+    margin: auto; /* Отступ от блока */
+    top: 100px; /* Положение блока от верхнего края */
+    bottom: 10px; /* Положение блока от нижнего края */
+    left:50px; /* Положение блока от левого края */
+    right:700px; /* Положение блока от правого края */
+    background: #DDA0DD; /* Цвет фона блока */
+    border: 1px solid #000; /* Рамка блока */
+    padding: 10px; /* Отступ внутри блока */
+    overflow: auto; /* Полоса прокрутки */
+   }
+</style>
+<style>
+    button.knopka {
+        color: #d8bfd8;
+        background: #6a1b9a;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid #6a1b9a;
+    }
+    button.knopka:hover {
+        background: #6a1b9a;
+    }
+</style>
+</head>
+<body bgcolor=#FFFAFA>
+<div class="header-h1 header-h1-dark">
+ <h1>ZOBota</h1>
+</div>
+<div class="blok-center">
+<form action="saveprofile" method="post">
+<br>
+<ul type=circle>
+<li><p>ФИО пациента<br />
+<input class="input" name="name" ENGINE="text" style="width:60%" /></p>
+<li><p>Возраст<br />
+<input class="input" name="age_number" type="text" style="width:60%" /></p>
+<select name="age" size="число видимых элементов"><
+ <option value="лет">лет</option>
+ <option value="месяцев">месяцев</option>
+ </select>
+<li><p>Пол<br />
+<select name="gender" size="число видимых элементов"><
+ <option value="female">женский</option>
+ <option value="male">мужской</option>
+ </select>
+<li><p>Микрокальцинаты<br />
+<select name="microcalcinate" size="число видимых элементов"><
+ <option value="присутствуют">присутствуют</option>
+ <option value="отсутствуют">отсутствуют</option>
+ </select>
+<p>Комментарий*<br />
+<input class="input" name="sub" type="text" style="width:60%" /></p>
+<li><p>Солидность<br />
+<input class="input" name="solidity" type="text" style="width:60%" /></p>
+<li><p>Эхогенность<br />
+<select name="echogenicity" size="число видимых элементов"><
+ <option value="повышена">повышена</option>
+ <option value="понижена">понижена</option>
+ <option value="в норме">в норме</option>
+ </select>
+<p>Комментарий*<br />
+<input class="input" name="sub" type="text" style="width:60%" /></p>
+<li><p>Контуры<br />
+<select name="contours" size="число видимых элементов"><
+ <option value="четкие и ровные">четкие и ровные</option>
+ <option value="не четкие и не ровные">не четкие и не ровные</option>
+ </select>
+<p>Комментарий*<br />
+<input class="input" name="sub" type="text" style="width:60%" /></p>
+<li><p>Кровоток1<br />
+<input class="input" name="blood flow1" type="text" style="width:60%" /></p>
+<li><p>Кровоток2<br />
+<input class="input" name="blood flow2" type="text" style="width:60%" /></p>
+<li><p>Вертикализация<br />
+<input class="input" name="verticalization" type="text" style="width:60%" /></p>
+<li><p>Гистология<br />
+<input class="input" name="histology" type="text" style="width:60%" /></p>
+<li><p><label for="date">Дата: </label><br/>
+<input type="date" id="date" name="date"/></p><br>
+</li>
+</ul>
+
+<button class="knopka" type="submit">Сохранить</button>
+
+
+<button class="knopka">Перейти к базе</button>
+</form>
+</div>
+
+</body>
+</html>
